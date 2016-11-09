@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+        
+
+
+    <head runat="server">
+
+        @Styles.Render("~/Content/layoutcss")
+
+
+
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   
+    
+    <title>INCIAL</title>
+    <asp:ContentPlaceHolder id="head" runat="server" Visible="False">
+    </asp:ContentPlaceHolder>
+</head>
+
+    <body >
+    <form id="form1" runat="server">
+     
+
+                <div id="cabecero"   >
+                    <div id="Contenido"  >
+                        <td style="width:100%;">
+                            <img src="~/Images/pleca.jpg" Class="myimage1" ID="Image1" />
+                        </td>
+                    </div>
+
+
+
+                    <div id="titulo" style="text-align:center"   >
+
+                      <h1 class="myH1"><FONT COLOR="#000080">S</FONT>istema <FONT COLOR="#000080">I</FONT>ntegral para <FONT COLOR="#000080">De</FONT>sarrolladoras de <FONT COLOR="#000080">Vi</FONT>viendas</h1>
+
+                    </div>
+                
+                </div>
+           
+
+
+        
+
+
+            
+         <div class="navbar navbar-default"  >      
+        <div id="nav">
+            <asp:Panel ID="Panel1" runat="server">
+
+            </asp:Panel>
+        </div>
+                </div>
+            <asp:contentplaceholder runat="server" ID="ContentPlaceHolder1" Visible="True">
+
+                @RenderBody()
+
+            </asp:contentplaceholder>
+                               
+        
+                        
+    </form>
+        @Scripts.Render("~/bundles/modernizr")
+       
+        @Scripts.Render("~/bundles/jquery")
+</body>
+
+</html>
